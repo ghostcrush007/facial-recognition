@@ -7,11 +7,11 @@ import threading
 import atexit
 
 # Load user details from CSV
-user_data_file = r'C:\Gen AI Project\Event Management\user_data.csv'
+user_data_file = " the folder path where you want to store the user data ex. user_data.csv "
 user_data_df = pd.read_csv(user_data_file)
 
 # Path to known faces
-known_faces_dir = "saved_faces/"
+known_faces_dir = "saved_faces/"  # folder name where the uploaded images are stored
 
 known_face_encodings = []
 known_face_names = []
