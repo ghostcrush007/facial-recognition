@@ -9,7 +9,7 @@ import pandas as pd
 # Function to register user and save their face encoding
 def register_user(name, email, address, ticket_type, img_bgr):
     # Save the user image and details to a CSV file or database
-    user_image_path = os.path.join("saved_faces", f"{name}.jpg")
+    user_image_path = os.path.join("saved_faces", f"{name}.jpg") # here saved_faces is the folder where the uploaded images are stored after user registration.
     
     # Save user details with image path
     user_data = {'Name': [name], 'Email': [email], 'Address': [address], 'Ticket_Type': [ticket_type], 'Image_Path': [user_image_path]}
